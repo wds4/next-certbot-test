@@ -44,7 +44,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
 
               # Now we have got the access of EC2 and we will start the deploy .
-              cd /home/ubuntu/cicd-test-next &&
+              cd /home/ubuntu/next-certbot-test &&
               git pull origin main &&
               npm install &&
               npm run build &&
